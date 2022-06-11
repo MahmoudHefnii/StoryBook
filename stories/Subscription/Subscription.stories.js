@@ -5,9 +5,7 @@ import { PrimaryBtn } from "../Btn/Btn.stories";
 export default {
   title: "Form/Subscription",
 };
-
 // using story within story
-
 export const PrimarySubscription = () => (
   <>
     <MediumInput />
