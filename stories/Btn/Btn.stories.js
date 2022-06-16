@@ -1,26 +1,25 @@
-import React from "react";
-import Center from "../Center/Center";
-import Btn from "./Btn";
-// import Center from '../Center/Center'
+import React from 'react';
+import Center from '../Center/Center';
+import Btn from './Btn';
 
 export default {
   //  For all Story
-  title: "Form/Btn",
+  title: 'Form/Btn',
   component: Btn,
   args: {
-    variant: "primary",
-    children: "Button",
+    variant: 'primary',
+    children: 'Button'
   },
   argTypes: {
     variant: {
-      control: "text",
-      default: "aaaaaaaa",
-      description: "sssssssssssssss",
+      control: 'text',
+      default: 'aaaaaaaa',
+      description: 'sssssssssssssss'
     },
-    children: { control: "text" },
-    onClick: { action: "clicked" },
+    children: { control: 'text' },
+    onClick: { action: 'clicked' }
   },
-  decorators: [(Story) => <Center>{Story()}</Center>],
+  decorators: [(Story) => <Center>{Story()}</Center>]
 };
 
 // export const PrimaryBtn = (props) => (
@@ -38,19 +37,19 @@ const Template = (args) => <Btn {...args} />;
 
 export const PrimaryA = Template.bind({});
 PrimaryA.args = {
-  variant: "primary",
-  children: "Primary A Args",
+  variant: 'primary',
+  children: 'Primary A Args'
 };
 
 export const PrimaryB = Template.bind({});
 PrimaryB.args = {
-  ...PrimaryA.args,
+  ...PrimaryA.args
 };
 
 export const PrimaryC = Template.bind({});
 PrimaryC.args = {
   ...PrimaryA.args,
-  variant: "primary",
+  variant: 'primary'
 };
 // Renaming stories
 // PrimaryBtn.storyName  = "Primary Btn Name"

@@ -1,9 +1,8 @@
-import React from "react";
-import Head from "next/head";
-import { PrimaryBtn, PrimaryC } from "../stories/Btn/Btn.stories";
-import styles from "../styles/Home.module.css";
-import Center from "../stories/Center/Center";
-import Btn from "../stories/Btn/Btn";
+import Test from '@/components/Test';
+import { PrimaryC } from '@/stories/Btn/Btn.stories';
+import Head from 'next/head';
+import React from 'react';
+import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
@@ -20,12 +19,12 @@ export default function Home() {
 
       <section>
         Components
+        <Test />
         <PrimaryC
           variant="danger"
           onClick={() => {
-            console.log("Thats it");
-          }}
-        >
+            console.log('Thats it');
+          }}>
           Button Component
         </PrimaryC>
       </section>
